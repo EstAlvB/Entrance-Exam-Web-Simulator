@@ -14,6 +14,15 @@ module.exports = {
         'soft-pink': '#FEEAFA',
         'soft-blue': '#DEE2FF'
       },
+      backgroundImage: {
+        'abstract': "url('/images/abstract.jpeg')",
+        'numeric': "url('/images/numeric.jpeg')",
+        'logic': "url('/images/logic.jpeg')",
+        'verbal': "url('/images/verbose.jpeg')"
+      },
+      listStyleImage: {
+        'check': 'url("/images/check.png")',
+      }
     },
   },
   plugins: [

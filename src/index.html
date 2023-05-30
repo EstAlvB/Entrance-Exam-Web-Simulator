@@ -10,36 +10,56 @@
     <title>Ingreso a Universidades</title>
 </head>
 <body>
-    <header class="lg:mx-10 p-4">
-        <nav class="flex flex-col lg:flex-row items-center justify-between">
+    <header class="bg-black">
+        <nav class="flex flex-col lg:flex-row items-center justify-between lg:mx-10 p-4">
             <div class="mb-3 lg:mb-0">
                 <a href="/src/index.html">
-                    <img class="inline h-16 w-auto mr-3" src="/images/logo2.png" alt="Logo">
-                    <h1 class="inline font-lilita text-3xl text-soft-gray align-middle">Ingreso a Universidades</h1>
+                    <img class="inline h-12 w-auto mr-3" src="/images/logo2.png" alt="Logo">
+                    <h1 class="inline font-lilita text-2xl text-soft-gray align-middle">Ingreso a Universidades</h1>
                 </a>
             </div>
             <div>
-                <ul class="font-nunito font-semibold text-black">
+                <ul class="font-nunito font-semibold text-white">
                     <li class="inline"><a class="hover:text-soft-gray" href="/src/index.html">Inicio</a></li>
                     <li class="inline ml-10">
                         <div tabindex="0" class="dropdown dropdown-hover dropdown-end"> 
                         <p class="hover:text-soft-gray">Simulador</p>
-                        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-60 font-normal">
-                            <li><a href="#">Test de Aptitud abstracta</a></li>
-                            <li><a href="#">Test de Razonamiento Numérico</a></li>
-                            <li><a href="#">Test de Razonamiento Lógico</a></li>
-                            <li><a href="#">Test de Razonamiento Verbal</a></li>
+                        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-60 font-normal text-black">
+                            <li><a class="active:bg-soft-pink active:text-black" href="/src/aptitud_abstracta/aptitud_abstracta.html">Test de Aptitud abstracta</a></li>
+                            <li><a class="active:bg-soft-pink active:text-black" href="/src/razonamiento_numerico/razonamiento_numerico.html">Test de Razonamiento Numérico</a></li>
+                            <li><a class="active:bg-soft-pink active:text-black" href="/src/razonamiento_logico/razonamiento_logico.html">Test de Razonamiento Lógico</a></li>
+                            <li><a class="active:bg-soft-pink active:text-black" href="#">Test de Razonamiento Verbal</a></li>
                         </ul>
                         </div>
                     </li>
                     <li class="inline ml-10">
                         <div tabindex="0" class="dropdown dropdown-hover dropdown-end">
                         <p class="hover:text-soft-gray">Temarios</p>
-                        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-60 font-normal">
-                            <li><a href="#">Aptitud abstracta</a></li>
-                            <li><a href="#">Razonamiento Numérico</a></li>
-                            <li><a href="#">Razonamiento Lógico</a></li>
-                            <li><a href="#">Razonamiento Verbal</a></li>
+                        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-60 font-normal text-black">
+                            <li><a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                </svg>
+                                Aptitud abstracta
+                            </a></li>
+                            <li><a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                </svg>
+                                Razonamiento Numérico
+                            </a></li>
+                            <li><a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                </svg>
+                                Razonamiento Lógico
+                            </a></li>
+                            <li><a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                </svg>
+                                Razonamiento Verbal
+                            </a></li>
                         </ul>
                         </div>
                     </li>
@@ -48,14 +68,14 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="bg-black pb-4">
         <section class="relative w-100 h-[35rem] mb-10">
             <img class="object-cover w-full h-full" src="/images/graduation.jpeg" alt="graduacion de jovenes">
             <div class="absolute inset-x-5 top-24">
                 <h1 class="font-lilita font-bold text-3xl text-white text-center">¡Bienvenido al sitio web preferido por los jóvenes!</h1>
             </div>
         </section>
-        <section class="flex flex-col justify-center items-center space-y-7 lg:space-y-0 lg:flex-row lg:mx-10 font-nunito text-center">
+        <section class="flex flex-col justify-center items-center space-y-7 lg:space-y-0 lg:flex-row lg:mx-10 font-nunito text-center text-white">
             <div class="flex flex-col items-center justify-center">
                 <img class="w-auto h-32" src="/images/ordenador-personal.png" alt="">
                 <p class="px-36 lg:px-20 py-5">
