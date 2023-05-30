@@ -1,0 +1,26 @@
+{
+  "name": "entrance-exam-web-simulator",
+  "version": "1.0.0",
+  "description": "Proyecto Personal Web de un Simulador de exámenes para el ingreso a la universidad.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EstAlvB/Entrance-Exam-Web-Simulator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EstAlvB/Entrance-Exam-Web-Simulator/issues"
+  },
+  "homepage": "https://github.com/EstAlvB/Entrance-Exam-Web-Simulator#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "daisyui": "^2.52.0"
+  }
+}
