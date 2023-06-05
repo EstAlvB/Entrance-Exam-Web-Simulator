@@ -59,9 +59,9 @@ function padZero(number) {
 function startTimer() {
   const timerInterval = setInterval(() => {
     currentTime--;
-    // Actualizamos el html con el tiempo actual
+    // actualizamos el html con el tiempo actual
     timer.textContent = `Quedan ${formatTime(currentTime)} minutos`;
-    // Verificamos si el tiempo ha llegado a cero
+    // verificamos si el tiempo ha llegado a cero
     if (currentTime <= 0) {
       clearInterval(timerInterval);
       finishEvaluation();
@@ -77,11 +77,11 @@ function finishEvaluation() {
 evaluationTitle.textContent = function() {
   switch (sessionStorage.getItem('EVAL_TYPE')) {
     case 'razonamiento_logico':
-      return 'Evaluación de razonamiento lógico';
+      return 'Prueba de razonamiento lógico';
     case 'razonamiento_numerico':
-      return 'Evaluación de razonamiento numerico';
+      return 'Prueba de razonamiento numerico';
     case 'razonamiento_verbal':
-      return 'Evaluación de razonamiento verbal';
+      return 'Prueba de razonamiento verbal';
   }
 }();
 
@@ -103,7 +103,8 @@ nextButton.addEventListener('click', () => {
     });
     showNextQuestion();
   } else {
-    //si se han acabado las preguntas, el boton nos debe redirigir a la pagina de resultados
+    // si se han acabado las preguntas, el boton nos debe redirigir 
+    // a la pagina de resultados
     finishEvaluation();
   }
 });

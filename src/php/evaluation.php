@@ -19,24 +19,24 @@
         </div>
     </header>
     <main>
-        <div class="mx-10 py-4">
+        <div class="lg:mx-10 py-4">
             <p id="question" class="font-nunito text-black"></p>
         </div>
-        <div class="mx-10 py-4 form-control space-y-3 text-black font-nunito font-normal text-base">
+        <div class="lg:mx-10 py-4 space-y-3 text-black font-nunito font-normal text-base">
             <div class="flex items-center gap-x-3">
-                <input id="a1" name="answers" type="radio" class="radio checked:bg-soft-orange" value="">
+                <input id="a1" name="answers" type="radio" class="radio focus:bg-soft-orange" value="">
                 <label for="a1" class="block leading-6"></label>
             </div>
             <div class="flex items-center gap-x-3">
-                <input id="a2" name="answers" type="radio" class="radio checked:bg-soft-orange" value="">
+                <input id="a2" name="answers" type="radio" class="radio focus:bg-soft-orange" value="">
                 <label for="a2" class="block leading-6"></label>
             </div>
             <div class="flex items-center gap-x-3">
-                <input id="a3" name="answers" type="radio" class="radio checked:bg-soft-orange" value="">
+                <input id="a3" name="answers" type="radio" class="radio focus:bg-soft-orange" value="">
                 <label for="a3" class="block leading-6"></label>
             </div>
             <div class="flex items-center gap-x-3">
-                <input id="a4" name="answers" type="radio" class="radio checked:bg-soft-orange" value="">
+                <input id="a4" name="answers" type="radio" class="radio focus:bg-soft-orange" value="">
                 <label for="a4" class="block leading-6"></label>
             </div>
         </div>
@@ -48,7 +48,7 @@
         </div>
     </main>
     <?php
-        echo '<script> sessionStorage.setItem("EVAL_TYPE", "' . $_GET['EVAL_TYPE'] . '");</script>';
+    echo '<script> sessionStorage.setItem("EVAL_TYPE", "' . $_GET['EVAL_TYPE'] . '");</script>';
     ?>
     <script type="text/javascript" src="/src/js/evaluation_script.js"></script>
 </body>
