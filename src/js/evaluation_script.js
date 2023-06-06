@@ -82,6 +82,8 @@ evaluationTitle.textContent = function() {
       return 'Prueba de razonamiento numerico';
     case 'razonamiento_verbal':
       return 'Prueba de razonamiento verbal';
+    case 'atencion_concentracion':
+      return 'Prueba de atención y concentración';
   }
 }();
 

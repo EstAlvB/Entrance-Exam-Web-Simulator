@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js,php}"],
   theme: {
     extend: {
       colors: {
@@ -11,10 +11,10 @@ module.exports = {
         'soft-blue': '#DEE2FF'
       },
       backgroundImage: {
-        'abstract': "url('/images/abstract.jpeg')",
         'numeric': "url('/images/numeric.jpeg')",
         'logic': "url('/images/logic.jpeg')",
-        'verbal': "url('/images/verbose.jpeg')"
+        'verbal': "url('/images/verbose.jpeg')",
+        'concentration': "url('/images/concentration.jpeg')"
       },
       listStyleImage: {
         'check': 'url("/images/check.png")',

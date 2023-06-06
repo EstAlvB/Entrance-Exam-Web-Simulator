@@ -2603,16 +2603,6 @@ html {
   top: 6rem;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -2638,6 +2628,10 @@ html {
   margin-right: 0.75rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -2646,8 +2640,8 @@ html {
   margin-top: 1.75rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
+.block {
+  display: block;
 }
 
 .inline {
@@ -2658,12 +2652,20 @@ html {
   display: flex;
 }
 
+.h-1\/2 {
+  height: 50%;
+}
+
 .h-12 {
   height: 3rem;
 }
 
 .h-32 {
   height: 8rem;
+}
+
+.h-56 {
+  height: 14rem;
 }
 
 .h-6 {
@@ -2684,14 +2686,6 @@ html {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-1\/2 {
-  height: 50%;
-}
-
-.h-56 {
-  height: 14rem;
 }
 
 .w-2\/3 {
@@ -2779,16 +2773,9 @@ html {
   gap: 1rem;
 }
 
-.space-y-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
-.space-y-7 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
 }
 
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -2803,26 +2790,24 @@ html {
   margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-7 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-0 {
   border-width: 0px;
-}
-
-.border-soft-purple {
-  --tw-border-opacity: 1;
-  border-color: rgb(203 192 211 / var(--tw-border-opacity));
-}
-
-.border-soft-pink {
-  --tw-border-opacity: 1;
-  border-color: rgb(254 234 250 / var(--tw-border-opacity));
 }
 
 .bg-base-100 {
@@ -2845,23 +2830,13 @@ html {
   background-color: rgb(142 154 175 / var(--tw-bg-opacity));
 }
 
-.bg-soft-pink {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 234 250 / var(--tw-bg-opacity));
-}
-
 .bg-soft-purple {
   --tw-bg-opacity: 1;
   background-color: rgb(203 192 211 / var(--tw-bg-opacity));
 }
 
-.bg-soft-orange {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 211 215 / var(--tw-bg-opacity));
-}
-
-.bg-abstract {
-  background-image: url('/images/abstract.jpeg');
+.bg-concentration {
+  background-image: url('/images/concentration.jpeg');
 }
 
 .bg-logic {
@@ -2915,6 +2890,11 @@ html {
   padding-right: 9rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -2925,29 +2905,25 @@ html {
   padding-bottom: 1.75rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
-.pb-40 {
-  padding-bottom: 10rem;
-}
-
-.pt-24 {
-  padding-top: 6rem;
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-10 {
   padding-bottom: 2.5rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .pl-10 {
   padding-left: 2.5rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
 }
 
 .text-center {
@@ -3021,6 +2997,10 @@ html {
   font-weight: 600;
 }
 
+.leading-6 {
+  line-height: 1.5rem;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -3065,14 +3045,19 @@ html {
   src: url('/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype');
 }
 
-.hover\:bg-soft-gray:hover {
+.checked\:bg-soft-orange:checked {
   --tw-bg-opacity: 1;
-  background-color: rgb(142 154 175 / var(--tw-bg-opacity));
+  background-color: rgb(239 211 215 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-soft-blue:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(222 226 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-soft-gray:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(142 154 175 / var(--tw-bg-opacity));
 }
 
 .hover\:text-soft-gray:hover {
@@ -3113,10 +3098,6 @@ html {
 
   .lg\:mb-0 {
     margin-bottom: 0px;
-  }
-
-  .lg\:mr-10 {
-    margin-right: 2.5rem;
   }
 
   .lg\:flex-row {

@@ -11,6 +11,8 @@ resultTitle.textContent = function() {
       return '¡Felicitaciones! Has completado tu prueba de: Razonamiento numérico';
     case 'razonamiento_verbal':
       return '¡Felicitaciones! Has completado tu prueba de: Razonamiento verbal';
+    case 'atencion_concentracion':
+      return '¡Felicitaciones! Has completado tu prueba de: Atención y Concentración';
   }
 }();
 

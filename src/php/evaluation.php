@@ -24,19 +24,19 @@
         </div>
         <div class="lg:mx-10 py-4 space-y-3 text-black font-nunito font-normal text-base">
             <div class="flex items-center gap-x-3">
-                <input id="a1" name="answers" type="radio" class="radio focus:bg-soft-orange" value="">
+                <input id="a1" name="answers" type="radio" class="radio checked:bg-soft-orange" value="">
                 <label for="a1" class="block leading-6"></label>
             </div>
             <div class="flex items-center gap-x-3">
-                <input id="a2" name="answers" type="radio" class="radio focus:bg-soft-orange" value="">
+                <input id="a2" name="answers" type="radio" class="radio checked:bg-soft-orange" value="">
                 <label for="a2" class="block leading-6"></label>
             </div>
             <div class="flex items-center gap-x-3">
-                <input id="a3" name="answers" type="radio" class="radio focus:bg-soft-orange" value="">
+                <input id="a3" name="answers" type="radio" class="radio checked:bg-soft-orange" value="">
                 <label for="a3" class="block leading-6"></label>
             </div>
             <div class="flex items-center gap-x-3">
-                <input id="a4" name="answers" type="radio" class="radio focus:bg-soft-orange" value="">
+                <input id="a4" name="answers" type="radio" class="radio checked:bg-soft-orange" value="">
                 <label for="a4" class="block leading-6"></label>
             </div>
         </div>
