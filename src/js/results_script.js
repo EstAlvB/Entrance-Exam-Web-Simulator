@@ -19,11 +19,11 @@ resultTitle.textContent = function() {
 repeatButton.href = function() {
   switch (sessionStorage.getItem('EVAL_TYPE')) {
     case 'razonamiento_logico':
-      return '/src/html/razonamiento_logico.html';
+      return '../html/razonamiento_logico.html';
     case 'razonamiento_numerico':
-      return '/src/html/razonamiento_numerico.html';
+      return '../html/razonamiento_numerico.html';
     case 'razonamiento_verbal':
-      return '/src/html/razonamiento_verbal.html';
+      return '../html/razonamiento_verbal.html';
   }
 }();
 

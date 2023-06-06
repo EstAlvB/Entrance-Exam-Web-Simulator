@@ -11,13 +11,13 @@ module.exports = {
         'soft-blue': '#DEE2FF'
       },
       backgroundImage: {
-        'numeric': "url('/images/numeric.jpeg')",
-        'logic': "url('/images/logic.jpeg')",
-        'verbal': "url('/images/verbose.jpeg')",
-        'concentration': "url('/images/concentration.jpeg')"
+        'numeric': "url('../images/numeric.jpeg')",
+        'logic': "url('../images/logic.jpeg')",
+        'verbal': "url('../images/verbose.jpeg')",
+        'concentration': "url('../images/concentration.jpeg')"
       },
       listStyleImage: {
-        'check': 'url("/images/check.png")',
+        'check': 'url("../images/check.png")',
       },
       fontFamily: {
         'nunito': ['Nunito Sans', 'sans-serif'],

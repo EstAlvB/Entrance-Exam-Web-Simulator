@@ -1,8 +1,8 @@
 <?php
 
 $USER = 'root';
-$PASSWORD = '12345678';
-$PORT = 3306;
+$PASSWORD = 'root';
+$PORT = 8889;
 $DATABASE = 'exam_simulator';
 
 // Nos conectamos a la base de datos

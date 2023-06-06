@@ -6,10 +6,10 @@
 
 @font-face {
     font-family: 'Lilita One';
-    src: url('/fonts/LilitaOne-Regular.ttf') format('truetype');
+    src: url('./fonts/LilitaOne-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Nunito Sans';
-    src: url('/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype');
+    src: url('./fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype');
 }

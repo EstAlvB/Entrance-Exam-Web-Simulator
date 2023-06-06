@@ -70,7 +70,7 @@ function startTimer() {
 }
 
 function finishEvaluation() {
-  window.location.replace('/src/html/results.html');
+  window.location.replace('../html/results.html');
   sessionStorage.setItem('USER_ANSWERS', JSON.stringify(userAnswers));
 }
 
@@ -112,7 +112,7 @@ nextButton.addEventListener('click', () => {
 });
 
 // obtenemos las preguntas de la base de datos
-fetch('/src/php/connect.php?'+ new URLSearchParams({
+fetch('../php/connect.php?'+ new URLSearchParams({
     EVAL_TYPE: sessionStorage.getItem('EVAL_TYPE')
   }))
   .then(response => response.json())
