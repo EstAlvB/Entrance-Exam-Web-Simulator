@@ -44,7 +44,7 @@ function showNextQuestion() {
   currentQuestionIndex++;
 }
 
-// funcion para dar formato de M:S
+// funcion para dar formato de Minutos:Segundos
 function formatTime(seconds) {
   const minutes = Math.floor(seconds / 60);
   const remainingSeconds = seconds % 60;
@@ -69,11 +69,15 @@ function startTimer() {
   }, 1000); // Actualizamos cada segundo 
 }
 
+// funcion para finalizar la evaluacion, la cual redirige
+// a la pagina de resultados y guarda en sesion las respuestas
+// del usuario
 function finishEvaluation() {
   window.location.replace('../html/results.html');
   sessionStorage.setItem('USER_ANSWERS', JSON.stringify(userAnswers));
 }
 
+// segun el tipo de prueba, se cambiara el titulo en el html
 evaluationTitle.textContent = function() {
   switch (sessionStorage.getItem('EVAL_TYPE')) {
     case 'razonamiento_logico':

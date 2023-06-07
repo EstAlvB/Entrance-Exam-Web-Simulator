@@ -27,6 +27,7 @@ repeatButton.href = function() {
   }
 }();
 
+// funcion anonima para calcular el porcentaje de aciertos del usuario
 resultElement.textContent = function () {
     let correctAnswersNum = 0;
     for (let answer of userAnswers) {

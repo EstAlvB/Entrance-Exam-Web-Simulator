@@ -23,10 +23,10 @@ while ($row = $result->fetch_assoc()) {
     $data[] = $row;
 }
 
-// Close the database connection
+// cerramos la conexion con la base de datos
 $connection->close();
 
-// Send the data as JSON response
+// enviamos los datos como una respuesta JSON
 header('Content-Type: application/json');
 echo json_encode($data);
 exit();
