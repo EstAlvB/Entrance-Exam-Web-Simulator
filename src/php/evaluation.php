@@ -11,14 +11,14 @@
     <title>Ingreso a Universidades</title>
 </head>
 
-<body>
+<body class="h-screen">
     <header class="bg-black">
         <div class="flex py-4 lg:mx-10 justify-between items-center">
             <h1 id="evaluationTitle" class="font-lilita text-white text-2xl"></h1>
             <h3 id="timer" class="font-nunito text-white text-base"></h3>
         </div>
     </header>
-    <main>
+    <main class="bg-simulator bg-cover bg-center h-full">
         <div class="lg:mx-10 py-4">
             <p id="question" class="font-nunito text-black"></p>
         </div>

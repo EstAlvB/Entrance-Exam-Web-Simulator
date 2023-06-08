@@ -1803,6 +1803,30 @@ html {
   content: attr(data-title);
 }
 
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel-item {
+  box-sizing: content-box;
+  display: flex;
+  flex: none;
+  scroll-snap-align: start;
+}
+
+.carousel-center .carousel-item {
+  scroll-snap-align: center;
+}
+
+.carousel-end .carousel-item {
+  scroll-snap-align: end;
+}
+
 .checkbox {
   flex-shrink: 0;
   --chkbg: var(--bc);
@@ -2257,6 +2281,10 @@ html {
   100% {
     transform: scale(1);
   }
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
 }
 
 .checkbox:focus-visible {
@@ -2784,6 +2812,10 @@ html {
   margin-bottom: 0.75rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .ml-10 {
   margin-left: 2.5rem;
 }
@@ -2860,6 +2892,10 @@ html {
   height: 100vh;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-2\/3 {
   width: 66.666667%;
 }
@@ -2901,8 +2937,8 @@ html {
   list-style-position: inside;
 }
 
-.list-disc {
-  list-style-type: disc;
+.list-decimal {
+  list-style-type: decimal;
 }
 
 .list-image-check {
@@ -3026,6 +3062,10 @@ html {
 
 .bg-numeric {
   background-image: url('../images/numeric.jpeg');
+}
+
+.bg-simulator {
+  background-image: url('../images/simulator.jpeg');
 }
 
 .bg-verbal {

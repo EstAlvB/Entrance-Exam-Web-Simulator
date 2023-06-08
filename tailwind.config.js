@@ -14,7 +14,8 @@ module.exports = {
         'numeric': "url('../images/numeric.jpeg')",
         'logic': "url('../images/logic.jpeg')",
         'verbal': "url('../images/verbose.jpeg')",
-        'concentration': "url('../images/concentration.jpeg')"
+        'concentration': "url('../images/concentration.jpeg')",
+        'simulator': "url('../images/simulator.jpeg')"
       },
       listStyleImage: {
         'check': 'url("../images/check.png")',

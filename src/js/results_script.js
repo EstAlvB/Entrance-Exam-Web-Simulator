@@ -24,6 +24,8 @@ repeatButton.href = function() {
       return '../html/razonamiento_numerico.html';
     case 'razonamiento_verbal':
       return '../html/razonamiento_verbal.html';
+    case 'atencion_concentracion':
+      return '../html/atencion_concentracion.html';
   }
 }();
 
@@ -33,8 +35,10 @@ resultElement.textContent = function () {
   let result = 0;
   if (userAnswers.length > 0) {
     for (let answer of userAnswers) {
-      if (answer.correctAnswer == answer.userAnswer) {
-        correctAnswersNum++;
+      if (answer) {
+        if (answer.correctAnswer == answer.userAnswer) {
+          correctAnswersNum++;
+        } 
       }
     }
     result = Math.round((correctAnswersNum / userAnswers.length * 100) * 10) / 10;

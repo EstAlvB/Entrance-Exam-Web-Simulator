@@ -102,12 +102,12 @@ nextButton.addEventListener('click', () => {
     document.getElementsByName('answers').forEach(function (element) {
       if (element.checked) {
         let currentQuestion = questions[currentQuestionIndex-1];
-        userAnswers.push(
+        userAnswers[currentQuestionIndex-1] = 
           {
             question: currentQuestion.question,
             correctAnswer: currentQuestion.correct_answer,
             userAnswer: element.value
-          });
+          };
         element.checked = false;
       }
     });
@@ -126,6 +126,7 @@ fetch('../php/connect.php?'+ new URLSearchParams({
   .then(response => response.json())
   .then(data => {
     questions = data;
+    userAnswers = new Array(questions.length);
     showNextQuestion();
     startTimer();
   })
