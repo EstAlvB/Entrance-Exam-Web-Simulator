@@ -29,11 +29,15 @@ repeatButton.href = function() {
 
 // funcion anonima para calcular el porcentaje de aciertos del usuario
 resultElement.textContent = function () {
-    let correctAnswersNum = 0;
+  let correctAnswersNum = 0;
+  let result = 0;
+  if (userAnswers.length > 0) {
     for (let answer of userAnswers) {
-        if (answer.correctAnswer == answer.userAnswer) {
-            correctAnswersNum++;
-        }
+      if (answer.correctAnswer == answer.userAnswer) {
+        correctAnswersNum++;
+      }
     }
-    return `${Math.round((correctAnswersNum/userAnswers.length*100)*10)/10}%`;
+    result = Math.round((correctAnswersNum / userAnswers.length * 100) * 10) / 10;
+  }
+  return `${result}%`;
 }();

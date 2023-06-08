@@ -47,6 +47,18 @@
             </button>
         </div>
     </main>
+    <input type="checkbox" id="modal" class="modal-toggle" hidden />
+    <div class="modal">
+        <div class="modal-box">
+            <div class="flex items-center justify-evenly ">
+                <img class="w-auto h-24" src="../../images/brain.gif" alt="cerebro animado triste">
+                <p class="font-nunito font-medium">¡Se terminó el tiempo de la evaluación!</p>
+            </div>
+            <div class="modal-action m-0 p-0">
+                <button id="modal-button" class="btn border-0 bg-soft-pink text-black hover:bg-soft-gray hover:text-white">OK</button>
+            </div>
+        </div>
+    </div>
     <?php
     echo '<script> sessionStorage.setItem("EVAL_TYPE", "' . $_GET['EVAL_TYPE'] . '");</script>';
     ?>

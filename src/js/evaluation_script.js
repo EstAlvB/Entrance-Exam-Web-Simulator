@@ -5,6 +5,7 @@ const nextButton = document.getElementById('nextButton');
 const questionElement = document.getElementById('question');
 const questionNumber = document.getElementById('questionNumber');
 const radioInputs = document.querySelectorAll('input[type="radio"]');
+const modal = document.getElementById('modal');
 
 // inicializamos variables
 let totalTime = 600; // tiempo total en segundos
@@ -64,7 +65,10 @@ function startTimer() {
     // verificamos si el tiempo ha llegado a cero
     if (currentTime <= 0) {
       clearInterval(timerInterval);
-      finishEvaluation();
+      modal.checked = true;
+      document.getElementById('modal-button').addEventListener('click', () => {
+        finishEvaluation();
+      });
     }
   }, 1000); // Actualizamos cada segundo 
 }
